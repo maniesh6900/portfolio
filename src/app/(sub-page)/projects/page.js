@@ -1,0 +1,29 @@
+"use client"
+import Image from "next/image";
+import bg from "../../../../public/background/projects-background.png"
+import Staff from "@/Components/models/staff";
+import RenderModel from "@/Components/RenderModel";
+import ProjectList from "@/Components/projects";
+import { projectsData } from "@/app/data";
+
+
+
+export default function project() {
+  return (
+    <main 
+      className="flex min-h-screen flex-col items-center justify-between relative text-accent">
+        <Image src={bg} 
+        alt="background-image" fill
+        className="w-full -z-50 h-screen object-cover object-center opacity-25 "
+        />
+
+      <ProjectList projects={projectsData} />
+
+      <div className="flex items-center justify-center fixed top-16 lg:top-20 -translate-x-2.5 -z-10 left-1/2 lg:left-24 h-screen ">
+      <RenderModel>
+        <Staff  /> 
+      </RenderModel>
+      </div>
+    </main>
+  );
+}
