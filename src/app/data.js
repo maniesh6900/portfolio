@@ -21,9 +21,30 @@ export const projectsData = [
     id: 1,
     name: "E-Commerce",
     description: "full stack practice project",
-    date: "2022-08-15",
+    date: "2024-08-15",
     demoLink: "https://e-commerce-client-virid.vercel.app/",
   },
+  // {
+  //   id: 2,
+  //   name: "E-Commerce",
+  //   description: "full stack practice project",
+  //   date: "2024-08-15",
+  //   demoLink: "https://e-commerce-client-virid.vercel.app/",
+  // },
+  // {
+  //   id: 3,
+  //   name: "E-Commerce",
+  //   description: "full stack practice project",
+  //   date: "2024-08-15",
+  //   demoLink: "https://e-commerce-client-virid.vercel.app/",
+  // },
+  // {
+  //   id: 4,
+  //   name: "E-Commerce",
+  //   description: "full stack practice project",
+  //   date: "2024-08-15",
+  //   demoLink: "https://e-commerce-client-virid.vercel.app/",
+  // },
   
 ];
 
