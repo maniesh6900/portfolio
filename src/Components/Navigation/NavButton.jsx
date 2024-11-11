@@ -1,10 +1,10 @@
 import { Github, Home, Linkedin, NotebookIcon, Palette, Phone, Twitter, User } from 'lucide-react';
 import Link from 'next/link'
 import React from 'react'
-
+import { motion } from "framer-motion";
 const NavButton = ({x, y, label, icon, newTab, link }) => {
 
-    const getIcon =(icon) =>{
+    const getIcon = (icon) =>{
         switch (icon) {
             case "home":
                 return <Home className='w-full h-auto' strokeWidth={1.5} /> 
@@ -27,12 +27,14 @@ const NavButton = ({x, y, label, icon, newTab, link }) => {
         }
     }
 
+    const NavLink = motion(Link);
+
   return (
         <div 
             className='absolute z-50'
             style={{transform : `translate(${x}, ${y})`}}
         >
-            <Link
+            <NavLink
                 href={link}
                 target={newTab ? '_blank' : "_self"}
                 className='text-foreground rounded-full flex items-center justify-center
@@ -48,7 +50,7 @@ const NavButton = ({x, y, label, icon, newTab, link }) => {
                     {label}
                     </span>
                 </span>
-            </Link>
+            </NavLink>
         </div>
    
   )
