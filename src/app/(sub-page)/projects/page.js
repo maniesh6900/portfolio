@@ -5,8 +5,9 @@ import Staff from "@/Components/models/staff";
 import RenderModel from "@/Components/RenderModel";
 import ProjectList from "@/Components/projects";
 import { projectsData } from "@/app/data";
+// import dynamic from "next/dynamic";
 
-
+// const Staff = dynamic((import("@/Components/models/staff"),{ssr : false}))
 
 export default function project() {
   return (
