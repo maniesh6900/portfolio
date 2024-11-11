@@ -3,7 +3,7 @@ import Image from "next/image";
 import bg from "../../../../public/background/projects-background.png"
 import Staff from "@/Components/models/staff";
 import RenderModel from "@/Components/RenderModel";
-import ProjectList from "@/Components/projects";
+import ProjectList from "@/Components/projects/index";
 import { projectsData } from "@/app/data";
 // import dynamic from "next/dynamic";
 
