@@ -43,7 +43,7 @@ const NavButton = ({x, y, label, icon, newTab, link }) => {
                 aria-label={label}
                 name={label}
             >   
-                <span className='relative w-16 h-16 p-4 animate-spin-slow-reverse group-hover:pause hover:text-accent cursor:pointer'>{getIcon(icon)}
+                <span className='relative w-14 h-14 p-4 animate-spin-slow-reverse group-hover:pause hover:text-accent cursor:pointer loading:lazy'>{getIcon(icon)}
                     <span className='peer bg-tranparent absolute left-0 top-0 h-full w-full '/>
                     <span className='absolute hidden peer-hover:block px-2 py-2 mx-3 top-1/2 left-full -translate-y-1/2 bg-background text-foreground 
                     text-sm rounded-md shadow-lg whitespace-nowrap'>
